@@ -1,6 +1,10 @@
 # MqPcfAutomation
-There is no decent .NET support for PCF in the IBM client, but we can use IKVM.NET to convert JARs to DLLs so we can still use .NET instead of JAVA to use PCF. This samples illustrates a full working implementation of this.
+There is no decent .NET support for PCF in the IBM client, but we can use IKVM.NET to convert JARs to DLLs so we can still use .NET instead of JAVA to use PCF. 
 
+This samples illustrates a full working implementation of this.
+
+![alt text](https://github.com/joenmaes/MqPcfAutomation/blob/master/MqPcfAutomationSample.png?raw=true)
+      
 More info on why and how: https://blog.jeroenmaes.eu/2018/12/automate-ibm-mq-object-creation-with-pcf-in-net-using-ikvm-net/
 
 ## Disclaimer
