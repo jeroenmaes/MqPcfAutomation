@@ -8,7 +8,7 @@ namespace MqPcfAutomation
 {
     public class MqSubscriptionManager : MqPcfManager
     {
-        public MqSubscriptionManager(string connection, string queueManager, string channel) : base(connection, queueManager, channel)
+        public MqSubscriptionManager(string connection, string queueManager, string channel, int port) : base(connection, queueManager, channel, port)
         {
             
         }
