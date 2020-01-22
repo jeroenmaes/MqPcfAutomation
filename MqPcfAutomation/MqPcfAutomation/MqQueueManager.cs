@@ -8,7 +8,7 @@ namespace MqPcfAutomation
 {
     public class MqQueueManager : MqPcfManager
     {
-        public MqQueueManager(string connection, string queueManager, string channel) : base(connection, queueManager, channel)
+        public MqQueueManager(string connection, string queueManager, string channel, int port) : base(connection, queueManager, channel, port)
         {
         }
         /// <summary>

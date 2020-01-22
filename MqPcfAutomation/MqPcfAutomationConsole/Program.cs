@@ -14,11 +14,12 @@ namespace MqClientTester
             try
             {
                 // Queue Demo
-                var connection = "localhost(1417)";
+                var connection = "localhost";
                 var queueManager = "QM1";
-                var channel = "DEMO.CH.CLIENTS";
+                var channel = "DEV.ADMIN.SVRCONN";
+                var port = 1414;
                 
-                var qMgr = new MqQueueManager(connection, queueManager, channel);
+                var qMgr = new MqQueueManager(connection, queueManager, channel, port);
 
                 qMgr.Create("QL.Q1.AUTO_DEMO1");
                 qMgr.Create("Q1.AUTO_DEMO1", "QL.Q1.AUTO_DEMO1", "CLUSTER1");
@@ -33,10 +34,10 @@ namespace MqClientTester
                 //qMgr.Delete("QL.Q1.AUTO_DEMO1");
                 
                 // Subscription Demo
-                var connection2 = "localhost(1417)";
+                var connection2 = "localhost";
                 var queueManager2 = "QM1";
                 
-                var sMgr = new MqSubscriptionManager(connection2, queueManager2, channel);
+                var sMgr = new MqSubscriptionManager(connection2, queueManager2, channel, port);
 
                 sMgr.Create("SUB.AUTODEMO", "/SU/AUTO_DEMO", "Q1.AUTO_DEMO1");
 
