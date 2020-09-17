@@ -6,6 +6,11 @@ namespace MqPcfAutomation
 {
     public static class MqHelper
     {
+        public static string GetMqClientLevel()
+        {
+            return MQEnvironment.version_notice;
+        }
+
         public static PCFMessageAgent CreatePcfAgent(string connection, string queueManager, string channel, int port)
         {
             var qm = CreateMqQueueManager(connection, queueManager, channel, port);

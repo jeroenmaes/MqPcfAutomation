@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MqPcfAutomation;
+﻿using MqPcfAutomation;
+using System;
 
 namespace MqClientTester
 {
@@ -13,6 +9,8 @@ namespace MqClientTester
         {
             try
             {
+                Console.WriteLine($"IKVM.NET MQ Client: {MqHelper.GetMqClientLevel()}");
+
                 // Queue Demo
                 var connection = "localhost";
                 var queueManager = "QM1";

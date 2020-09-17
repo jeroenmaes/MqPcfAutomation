@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MqPcfAutomation</RootNamespace>
     <AssemblyName>MqPcfAutomation</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,16 +32,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="com.ibm.mq">
-      <HintPath>..\References\IBM\9.1.0.4\com.ibm.mq.dll</HintPath>
+      <HintPath>..\References\IBM\9.2.0.0\com.ibm.mq.dll</HintPath>
     </Reference>
     <Reference Include="com.ibm.mq.headers">
-      <HintPath>..\References\IBM\9.1.0.4\com.ibm.mq.headers.dll</HintPath>
+      <HintPath>..\References\IBM\9.2.0.0\com.ibm.mq.headers.dll</HintPath>
     </Reference>
     <Reference Include="com.ibm.mq.jmqi">
-      <HintPath>..\References\IBM\9.1.0.4\com.ibm.mq.jmqi.dll</HintPath>
+      <HintPath>..\References\IBM\9.2.0.0\com.ibm.mq.jmqi.dll</HintPath>
     </Reference>
     <Reference Include="com.ibm.mq.pcf">
-      <HintPath>..\References\IBM\9.1.0.4\com.ibm.mq.pcf.dll</HintPath>
+      <HintPath>..\References\IBM\9.2.0.0\com.ibm.mq.pcf.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Beans">
       <HintPath>..\references\IKVM.OpenJDK.Beans.dll</HintPath>
